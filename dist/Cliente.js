@@ -1,9 +1,10 @@
 "use strict";
 class Cliente extends Pessoa {
-    constructor(cpf, nome, telefone, vip, enderecos) {
+    constructor(cpf, nome, telefone, vip, enderecos, conta) {
         super(cpf, nome, telefone);
         this.vip = vip;
         this.enderecos = enderecos;
+        this.conta = conta;
     }
     autenticar() {
         return true;
